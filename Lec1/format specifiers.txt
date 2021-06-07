@@ -1,0 +1,12 @@
+d or i - Integer
+o - octal format
+x - hex
+X - Uppercase Hex
+
+f - float / double
+p - Print address
+c - char
+s - string
+ld - long signed integer
+
+u - unsigned integer

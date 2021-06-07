@@ -15,3 +15,5 @@ int main(){
 
     return 0;
 }
+
+// -2^15 to 0 to 2^15 -1
