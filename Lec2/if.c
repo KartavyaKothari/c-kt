@@ -14,8 +14,13 @@ int main(){
     // ==
     // <=
     // >=
+    // != not equal to
 
-    if(a >= 18){
+    // && - AND
+    // || - OR
+    // ! - NOT
+
+    if( !(a >= 18) ){
         printf("Legal age");
     }else{
         printf("Juvinile age");

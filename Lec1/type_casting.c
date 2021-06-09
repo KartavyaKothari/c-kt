@@ -7,10 +7,11 @@ int main(){
     // int b = 2;
     // double c = (double)a/b;
 
-    int e = 200000000;
-    long long a = (long long)e+(long long)e;
+    int e = 2147483647;
 
-    printf("%ld",a);
+    int a = (long)e;
+
+    printf("%d",a);
 
     // (-2^31) + (2^31) - 2
     
