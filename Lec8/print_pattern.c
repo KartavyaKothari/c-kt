@@ -28,7 +28,7 @@ void repeat(char c, int n){
     // printf("\n");
 }
 
-void print_pattern(int n){
+void print_pattern(int n,char c){
     int i;
     int j = n;
     for(i = 1 ; i < 2*n ; i = i+2){
@@ -36,12 +36,12 @@ void print_pattern(int n){
         // printf("%d",j);
         repeat(' ',j);
         j--;
-        repeat('*',i);
+        repeat(c,i);
         printf("\n");
     }
 
     // printf("%d\n",i);
-    repeat('*',i);
+    repeat(c,i);
     printf("\n");
 
     j = 1;
@@ -49,13 +49,14 @@ void print_pattern(int n){
         // printf("%d\n",i);
         repeat(' ',j);
         j++;
-        repeat('*',i);
+        repeat(c,i);
         printf("\n");
     }
 }
 
 int main(){
     int n;
-    scanf("%d",&n);
-    print_pattern(n);
+    char c;
+    scanf("%d %c",&n,&c);
+    print_pattern(n,c);
 }
