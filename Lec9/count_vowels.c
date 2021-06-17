@@ -1,11 +1,17 @@
 #include<stdio.h>
 
+int is_vowel(char c){
+    if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'){
+        return 1;
+    }else return 0;
+}
+
 int vowel_cnt(char arr[]){
     int i = 0;
     int cnt = 0;
 
     while(arr[i]!='\0'){
-        if(arr[i] == 'a' || arr[i] == 'e' || arr[i] == 'i' || arr[i] == 'o' || arr[i] == 'u'){
+        if(is_vowel(arr[i])){
             cnt++;
         }
         i++;
