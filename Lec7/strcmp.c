@@ -5,12 +5,12 @@ int cmp_strings(char name1[], char name2[]){
     int i = 0;
 
     while(name1[i] != '\0' || name2[i] != '\0'){
-        if(name1[i] == name2[i])
-            continue;
-        return 1;
+        if(name1[i] == name2[i]){
+            i++;
+        }else return 1;
     }
 
-    if(name1[i] != '\0' && name2[i] != '\0')
+    if(name1[i] == '\0' && name2[i] == '\0')
         return 0;
     return 1;
 }
